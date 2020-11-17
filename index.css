@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: lightseagreen;
+}
+header{
+    font-size: 3vh;
+    color: white;
+    text-align: center;
+    background: rgb(162, 0, 202);
+    padding: 20px;
+}
+article{
+    font-size: 2vh;
+    background: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+/* GALLERY GRID SETTINGS */
+#t1{grid-area: t1;}
+#t2{grid-area: t2;}
+#t3{grid-area: t3;}
+#t4{grid-area: t4;}
+#t5{grid-area: t5;}
+
+#gallery{
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    ;
+    grid-template-rows: 200px 200px;
+    grid-template-areas:
+    't1 t1 t2 t2 t3 t3'
+    't4 t4 t4 t5 t5 t5'
+    ;
+    gap: 10px;
+}
+
+.t{
+    font-size: 2.5vh;
+    text-align: center;
+    background: white;
+    border-radius: 10px;
+    border: 1px solid black;
+    background-size: 100%;
+    text-decoration: none;
+    color: white;
+    text-shadow: 0 0 5px black;
+}
+#t1{
+    background-image: url(./media/Elliottlab1C.jpg);
+}
+#t2{
+    background-image: url(./media/Elliottlab2A.jpg);
+}
+#t3{
+    background-image: url(./media/The\ Decision.jpg);
+}
+#t4{
+    background-image: url(./media/rainy-night.jpg);
+}
+#t5{
+    background-image: url(./media/AdamHatesYogaSmall.mp4);
+}
+
+
+/* GALLERY GRID SETTINGS */
+
