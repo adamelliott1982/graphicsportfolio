@@ -1,3 +1,5 @@
+
+
 *{
     padding: 0;
     margin: 0;
@@ -8,18 +10,52 @@ body{
     background: lightseagreen;
 }
 header{
-    font-size: 3vh;
+    text-shadow: 0 0 3px black;
+    font-size: 2rem;
     color: white;
     text-align: center;
     background: rgb(162, 0, 202);
+    
+    padding: 10px;
+}
+main{
     padding: 20px;
+}
+.lab{
+    height: 80vh;
+    margin: auto;
+    display: block;
 }
 article{
-    font-size: 2vh;
+    text-align: center;
+    font-size: 1.25rem;
     background: white;
     padding: 20px;
-    margin: 20px;
+    width: 50vw;
+    margin: 20px auto;
     border-radius: 10px;
+}
+h3{
+    text-decoration: underline;
+    padding: 10px;
+}
+h4{
+    padding: 10px;
+}
+button{
+    width: 20vw;
+    height: 4vh;
+    display: block;
+    margin: auto;
+}
+
+
+footer{
+    color: white;
+    font-size: 1.25rem;
+    padding: 20px;
+    background: grey;
+    text-align: center;
 }
 
 
@@ -27,29 +63,44 @@ article{
 
 
 
-
-/* GALLERY GRID SETTINGS */
+/* GRID SETTINGS */
 #t1{grid-area: t1;}
 #t2{grid-area: t2;}
 #t3{grid-area: t3;}
 #t4{grid-area: t4;}
 #t5{grid-area: t5;}
+#lab-1{grid-area: lab-1;}
+#lab-1a{grid-area: lab-1a;}
 
-#gallery{
+#gallery-main{
     list-style-type: none;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     ;
-    grid-template-rows: 200px 200px;
+    grid-template-rows: 20vh 20vh;
     grid-template-areas:
     't1 t1 t2 t2 t3 t3'
     't4 t4 t4 t5 t5 t5'
     ;
     gap: 10px;
 }
-
+#gallery-t1{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+    'lab-1a lab-1'
+    ;
+    gap: 10px;
+}
+#lab-1{
+    width: 48vw;
+}
+#lab-1a{
+    width: 48vw;
+}
 .t{
-    font-size: 2.5vh;
+    font-size: 5vh;
+    padding: 30px;
     text-align: center;
     background: white;
     border-radius: 10px;
@@ -57,7 +108,7 @@ article{
     background-size: 100%;
     text-decoration: none;
     color: white;
-    text-shadow: 0 0 5px black;
+    text-shadow: 0 0 3px black;
 }
 #t1{
     background-image: url(./media/Elliottlab1C.jpg);
